@@ -7,8 +7,8 @@ on:
     branches: [ "main" ]
 
   jobs:
-    compile:
-      name: compile
+  compile:
+    name: compile
 
     runs-on: ubuntu-latest
 
