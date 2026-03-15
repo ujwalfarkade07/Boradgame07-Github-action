@@ -10,7 +10,7 @@ jobs:
   pre_build:
     name: compile project
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     env:
       STAGE_NAME: BEFORE-PACKAGE
       
@@ -36,7 +36,7 @@ jobs:
     
     name: build
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: pre_build
 
     steps:
